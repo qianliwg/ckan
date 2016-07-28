@@ -1,0 +1,274 @@
+<style>
+.con {
+    width: 100%;
+}
+.con1 {
+    height: 710px;
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+}
+.con1_4 {
+    position: absolute;
+    right: 0;
+    top: 220px;
+}
+.con1_4 .c144 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 white !important;
+    clear: both;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    padding: 5px 30px;
+    text-shadow: 0 0 0 white !important;
+}
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+    outline: medium none;
+}
+.slides, .flex-control-nav, .flex-direction-nav {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+.flexslider .slides > li {
+    display: none;
+}
+.flexslider .slides img {
+    display: block;
+    height: 100%;
+}
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+.slides::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+html[xmlns] .slides {
+    display: block;
+}
+* html .slides {
+    height: 1%;
+}
+.no-js .slides > li:first-child {
+    display: block;
+}
+.flexslider {
+    margin: 0;
+}
+.flex-viewport {
+    max-height: 2000px;
+    transition: all 1s ease 0s;
+}
+.loading .flex-viewport {
+    max-height: 300px;
+}
+.flexslider .slides {
+}
+.flexslider .slides li {
+    height: 400px;
+    overflow: hidden;
+}
+.flexslider .slides li img {
+    width: 1440px;
+    margin: 0 auto;
+}
+.carousel li {
+    margin-right: 5px;
+}
+.flex-direction-nav {
+}
+.flex-direction-nav a {
+    background: rgba(0, 0, 0, 0) url("../base/images/bg_direction_nav.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    margin: -50px 0 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 38%;
+    width: 50px;
+    z-index: 110;
+    opacity: 0.4;
+}
+.flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: 0;
+}
+.flex-direction-nav .flex-prev {
+    left: 0;
+}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+}
+.flex-direction-nav .flex-disabled {
+    cursor: default;
+    opacity: 0.3 !important;
+}
+.flex-control-nav {
+    bottom: -40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.flex-control-nav li {
+    display: inline-block;
+    margin: 0 6px;
+}
+.flex-control-paging li a {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;
+    cursor: pointer;
+    display: block;
+    height: 11px;
+    text-indent: -9999px;
+    width: 11px;
+}
+.flex-control-paging li a:hover {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+}
+.flex-control-paging li a.flex-active {
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+    cursor: default;
+}
+.flex-control-thumbs {
+    margin: 5px 0 0;
+    overflow: hidden;
+    position: static;
+}
+.flex-control-thumbs li {
+    float: left;
+    margin: 0;
+    width: 25%;
+}
+.flex-control-thumbs img {
+    cursor: pointer;
+    display: block;
+    opacity: 0.7;
+    width: 100%;
+}
+.flex-control-thumbs img:hover {
+    opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+    cursor: default;
+    opacity: 1;
+}
+@media screen and (max-width: 860px) {
+.flex-direction-nav .flex-prev {
+    left: 0;
+    opacity: 1;
+}
+.flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0;
+}
+}
+#slidebox {
+    background: #0076db;
+    height: 400px;
+}
+.banner1 {
+    color: #fff;
+    height: 100%;
+    margin: 0 auto;
+    width: 1000px;
+}
+.banner1 h3 {
+    font-size: 25px;
+    position: absolute;
+    top: 100px;
+}
+.banner1 h4 {
+    font-size: 15px;
+    position: absolute;
+    top: 160px;
+    width:380px
+}
+.banner1 p {
+    font-size: 14px;
+    position: absolute;
+    top: 220px;
+}
+.banner1 button {
+    background: #ffb900 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 3px;
+    color: #464955;
+    font-size: 15px;
+    height: 35px;
+    position: absolute;
+    top: 300px;
+    width: 120px;
+}
+</style>
+                
+<script src="/base/js/jquery-1.11.3.js"></script>
+<script src="/base/js/jquery.flexslider.js"></script>
+<script src="/base/js/slide.js"></script>
+
+    
+<div class="flexslider" id="slidebox">
+    <ul class="slides">
+      
+      <li>
+	<div style="background: rgb(9, 25, 45);">
+          <img src="/base/images/banner_1.jpg">
+
+          <div class="banner1">
+              <h3>“云”领物联·共“创”未来</h3>
+              <h4>低影响开发(Low Impact Development,LID)指在场地开发过程中采用源 头、分散式措施维持场地开发前的水文特征,也称为低影响设计(Low Impact Design,LID)或低影响城市设计和开发(Low Impact Urban Design and Development,LIUDD)。</h4>
+              <p></p>
+          </div>
+
+          <a class="frmore" href="">  </a>
+	</div>
+      </li>
+      
+      <li>
+	<div style="background: rgb(8, 173, 231);">
+          <img src="/base/images/banner_2.jpg">
+
+          <div class="banner1">
+              <h3>海绵城市·生态文明·美丽中国</h3>
+              <h4>党的“十八大”报告明确提出 “面对资源约束趋紧、环境污染严重、生态系统退化的严峻形势,必须树立尊重 自然、顺应自然、保护自然的生态文明理念,把生态文明建设放在突出地位”。</h4>
+              <p><br /><br /></p>
+          </div>
+
+          <a class="frmore" href="">  </a>
+	</div>
+      </li>
+      <li>
+	<div style="background: rgb(9, 25, 45);">
+          <img src="/base/images/banner_3.jpg">
+
+          <div class="banner1">
+              <h3>数据沣西·智慧西咸·云储中国</h3>
+              <h4>顾名思义,海绵城市是指城市能够像海绵一样,在适应环境变化和应对自然 灾害等方面具有良好的“弹性”,下雨时吸水、蓄水、渗水、净水,需要时将蓄 存的水“释放”并加以利用。</h4>
+              <p><br /><br /></p>
+          </div>
+
+          <a class="frmore" href="">  </a>
+	</div>
+      </li>
+    </ul>
+
+    <div class="doverlay"></div>
+  <ul class="flex-direction-nav"><li><a href="#" class="flex-prev">Previous</a></li><li><a href="#" class="flex-next">Next</a></li></ul>
+</div>
+

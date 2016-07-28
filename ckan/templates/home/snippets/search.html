@@ -1,21 +1,105 @@
 {% set tags = h.get_facet_items_dict('tags', limit=3) %}
-{% set placeholder = _('E.g. environment') %}
+{% set placeholder = _("例如：医疗卫生") %}
 
-<div class="module module-search module-narrow module-shallow box">
+<!--<div class="module module-search module-narrow module-shallow box">
   <form class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">
-    <h3 class="heading">{{ _("Search data") }}</h3>
+    <h3 class="heading">{{ _("搜索你的数据") }}</h3>
     <div class="search-input control-group search-giant">
       <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ placeholder }}{% endblock %}" />
       <button type="submit">
         <i class="icon-search"></i>
-        <span>{{ _('Search') }}</span>
+        <span>{{ _("搜索") }}</span>
       </button>
     </div>
   </form>
   <div class="tags">
-    <h3>{{ _('Popular tags') }}</h3>
+    <h3>{{ _("热门标签") }}</h3>
     {% for tag in tags %}
       <a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
     {% endfor %}
   </div>
+</div>-->
+<style>
+.search-container {
+    background: #0076db url("../base/images/search_bar_bg.png") no-repeat scroll center 0;
+    height: 140px;
+}
+
+.search {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+}
+.search-input {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px;
+    height: 35px;
+    left: 50%;
+    margin-left: -232px;
+    margin-top: -17px;
+    position: absolute;
+    top: 50%;
+    width: 465px;
+}
+.search-input input {
+    margin: 0;
+    padding: 0;
+}
+.search-input .input-ban::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 35px;
+    width: 35px;
+}
+.search-input .input-ban {
+    border: 0 none;
+    height: 35px;
+    margin-left: 30px;
+    width: 300px;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.search-input .search-icon {
+    background: rgba(0, 0, 0, 0) url("../base/images/icon_voice.png") no-repeat scroll center center;
+    cursor: pointer;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 35px;
+}
+
+.search-input .search-btn {
+    background: rgba(0, 0, 0, 0) url("../base/images/icon_search.png") no-repeat scroll center center;
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    border:0 none;
+}
+</style>
+<div class="search-container">
+    <div class="search">
+        <!--<img class="arr" src="/base/images/arrow_search.png">-->
+        <!--<div style="height:0px; overflow:hidden;">&nbsp;</div>-->
+        <div class="search-input">
+            <form accept-charset="UTF-8" id="search-block-form" method="post" action="{% url_for controller='package', action='search' %}">
+				<!--<div class="search-icon"></div>-->
+				<input type="text" placeholder="搜索" class="input-ban" name="q"> 
+                                <!--<div class="search-btn">-->
+                                    <input type="submit" value="" class="search-btn" />
+                                <!--</div>-->
+<!--                <input type="text" maxlength="128" size="15" value="" name="q" id="edit-search-block-form--2" placeholder="例如：医疗卫生" class="c211 form-text" title="例如：医疗卫生">
+                <div class="c212">
+                    <input type="submit" class="form-submit" value="全站搜索" name="op" >
+                </div>-->
+            </form>  
+        </div>
+    </div>
 </div>

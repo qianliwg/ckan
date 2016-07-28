@@ -1,0 +1,81 @@
+<style>
+.source {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 1030px;
+}
+.source-title {
+    height: 88px;
+    position: relative;
+}
+.source-title h3 {
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 32px;
+    line-height: 88px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.source-title span a {
+    color: #555;
+    font-size: 13px;
+    line-height: 88px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.6;
+}
+ol, ul {
+    list-style: outside none none;
+}
+.source-list > ul > li {
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    float: left;
+    height: 200px;
+    text-align: center;
+    width: 199px;
+}
+.source-list > ul > li > a span {
+    color: #555;
+    font-size: 22px;
+    line-height: 80px;
+}
+.source-list > ul > li > a img {
+    display: block;
+    margin: 0 auto;
+}
+
+</style>
+        <!--<script src="/base/js/jquery-1.11.3.js"></script>-->
+<script>
+
+</script>
+
+
+<div class="source-container">
+    <div class="source">
+        <div class="source-title">
+            <h3>热门数据资源</h3>
+            <span><a href="#" onclick="javascript:window.location.href = 'dataset?q=';">更多</a></span>
+        </div>
+        <div class="source-list">
+            <ul>
+                <li><a href="/dataset?q=基础数据"><span>基础数据</span><img src="/base/images/icon/icon_1_1.png"></a></li>
+                <li><a href="/dataset?q=原始数据"><span>原始数据</span><img src="/base/images/icon/icon_1_2.png"></a></li>
+                <li><a href="/dataset?q=项目数据"><span>项目数据</span><img src="/base/images/icon/icon_1_3.png"></a></li>
+                <li><a href="/dataset?q=科研数据"><span>科研数据</span><img src="/base/images/icon/icon_1_4.png"></a></li>
+            </ul>
+        </div>
+        <div class="source-list">
+            <ul>
+                <li><a href="/dataset?q=统计数据"><span>统计数据</span><img src="/base/images/icon/icon_1_5.png"></a></li>
+                <li><a href="/dataset?q=分析数据"><span>分析数据</span><img src="/base/images/icon/icon_1_6.png"></a></li>
+                <li><a href="/dataset?q=模拟数据"><span>模拟数据</span><img src="/base/images/icon/icon_1_7.png"></a></li>
+				<li><a href="/dataset?q=日志数据"><span>日志数据</span><img src="/base/images/icon/icon_1_8.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
